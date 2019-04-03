@@ -1,7 +1,7 @@
 # main.py
+from requests import request
 
-
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 
 from api_call import ingredient_search
 
