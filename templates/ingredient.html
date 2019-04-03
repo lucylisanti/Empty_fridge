@@ -14,7 +14,9 @@
 
 <ul>
 {% for recipe in recipes %}
-<li>{{ recipe.title }}</li>
+<li>{{ recipe.title }}
+    <a href="{{recipe.source_url}}" ><img src="{{recipe.image_url}}"></a></li>
+
 {% endfor %}
 </ul>
 </body>
