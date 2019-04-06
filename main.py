@@ -22,7 +22,6 @@ app = Flask(__name__)
 # pprint(recipes)
 
 
-
 @app.route('/send', methods=["GET", "POST"])
 def send():
     if request.method == "POST":
