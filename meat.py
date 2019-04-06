@@ -1,7 +1,7 @@
 meats = ['chicken', 'lamb', 'pork', 'beef', 'bacon']
 
 
-str1 = 'chicken stew'
+test_recipes = ['chicken stew', 'potato pie', 'roast lamb', 'tomato soup']
 
 
 def veggie(string):
@@ -15,6 +15,12 @@ def veggie(string):
             val.append(False)
 
     print(all(val))
+
+
+str1 = 'chicken stew'
+
+veggie(str1)
+
 
 
 

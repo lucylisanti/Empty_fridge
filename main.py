@@ -1,5 +1,5 @@
 # main.py
-
+from typing import Dict, Any
 
 from flask import Flask, render_template, request
 
@@ -31,12 +31,13 @@ def send():
         ingredient = request.form["ingredient"]
 
         recipes = ingredient_search(ingredient)
+        veggie_recipes: Dict[Any, Any] = {}
 
         for recipe in recipes:
-            if not veggie(recipe.source_url):
-                recipes.remove(recipe)
+            if veggie(recipe.source_url):
+                veggie_recipes.append(recipe)
 
-        return render_template("ingredient.html", ingredient=ingredient, recipes=recipes)
+        return render_template("ingredient.html", ingredient=ingredient, recipes=veggie_recipes)
 
     return render_template("index.html")
 
