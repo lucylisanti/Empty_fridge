@@ -1,21 +1,54 @@
-# index
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"/>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Empty Fridge</title>
 </head>
-<body>
-<h1>Input ingredient</h1>
-<form method="POST" action="/send">
-  <div class="form-group">
-    <input type="text" name="ingredient">
-  </div>
-  <input class="btn btn-primary" type="submit" value="submit">
-</form>
 
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Empty Fridge</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Ingredient lookup</a>
+      <a class="nav-item nav-link" href="#">About</a>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Empty Fridge</h1>
+    <p class="lead">Nothing to eat? Think again.</p>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-10">
+            <h1>Input ingredient</h1>
+            <div class="ingredient-search"></div>
+                <form method="POST" action="/send">
+                  <div class="form-group">
+                    <input type="text" name="ingredient">
+                  </div>
+                  <input class="btn btn-primary" type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+<script src="static/jquery-3.3.1.min.js"></script>
+<script src="static/bootstrap.js"></script>
 </body>
 </html>
