@@ -1,5 +1,4 @@
 import requests
-from meat import veggie
 
 
 def ingredient_search(ingredient_name):

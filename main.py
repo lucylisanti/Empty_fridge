@@ -1,8 +1,6 @@
 # main.py
-from typing import Dict, Any
 
 from flask import Flask, render_template, request
-
 from api_call import ingredient_search
 from meat import veggie
 

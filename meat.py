@@ -1,4 +1,7 @@
-meats = ['chicken', 'lamb', 'pork', 'beef', 'bacon']
+# meat
+
+Pike
+meats = ['chicken', 'lamb', 'pork', 'bacon', 'sausage', 'salami', 'prosciutto', 'jamon', 'ham', 'hotdog', 'bratwurst', 'beef', 'steak', 'brisket', 'veal', 'turkey', 'duck', 'liver', 'foie gras', 'fish', 'anchovy','basa','bass', 'bream','catfish','cod','dorade','eel','flounder','grouper','haddock','hake','halibut','herring','ilish','john dory','lamprey','lingcod','mackerel','mahi','mullet','pilchard','pollock','pomfret','pompano','salmon','sardine','shark','skate','snapper','sole','sprat','sturgeon','surimi','swordfish','tilapia','trout','tuna','turbot','whitefish','whiting']
 
 
 def veggie(string):
