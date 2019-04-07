@@ -29,15 +29,18 @@ found_meat = []
 def send():
     if request.method == "POST":
         ingredient = request.form["ingredient"]
+        vegetarian = request.form.get('vegetarian')
 
         recipes = ingredient_search(ingredient)
 
         veggie_recipes = [recipe for recipe in recipes if veggie(recipe['source_url'].lower()) is True]
 
-        return render_template("ingredient.html", ingredient=ingredient, recipes=veggie_recipes)
+        if vegetarian:
+            return render_template("ingredient.html", ingredient=ingredient, recipes=veggie_recipes)
+        else:
+            return render_template("ingredient.html", ingredient=ingredient, recipes=recipes)
 
     return render_template("index.html")
-
 
 
 if __name__ == "__main__":
