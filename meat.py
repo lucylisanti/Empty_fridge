@@ -1,9 +1,6 @@
 meats = ['chicken', 'lamb', 'pork', 'beef', 'bacon']
 
 
-test_recipes = ['chicken stew', 'potato pie', 'roast lamb', 'tomato soup']
-
-
 def veggie(string):
 
     val = []

@@ -9,15 +9,13 @@
     <title>Ingredient</title>
 </head>
 <body>
-<h1>Your ingredient is  {{ ingredient }}</h1>
-<h1>Your recipes are </h1>
-
-<ul>
-{% for recipe in recipes %}
-<li>{{ recipe.title }}
-    <a href="{{recipe.source_url}}" ><img src="{{recipe.image_url}}"></a></li>
-
-{% endfor %}
-</ul>
+    <h1>Your ingredient is  {{ ingredient }}</h1>
+    <h1>Your recipes are </h1>
+    <ul>
+        {% for recipe in recipes %}
+        <li>{{ recipe.title }}
+            <a href="{{recipe.source_url}}" ><img src="{{recipe.image_url}}"></a></li>
+        {% endfor %}
+    </ul>
 </body>
 </html>

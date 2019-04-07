@@ -9,14 +9,13 @@
     <title>Index</title>
 </head>
 <body>
-<h1>Input ingredient</h1>
-<form method="POST" action="/send">
-  <div class="form-group">
-    <input type="text" name="ingredient">
-  </div>
-    <input type="checkbox" name="vegetarian" value="vegetarian" che> Only show me vegetarian recipes
-  <input class="btn btn-primary" type="submit" value="submit">
-</form>
-
+    <h1>Input ingredient</h1>
+    <form action="/send" method="POST">
+        <div class="form-group">
+            <input type="text" name="ingredient">
+        </div>
+        <input name="vegetarian" type="checkbox" value="vegetarian"> Only show me vegetarian recipes
+        <input class="btn btn-primary" type="submit" value="submit">
+    </form>
 </body>
 </html>
