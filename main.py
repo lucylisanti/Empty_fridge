@@ -1,11 +1,12 @@
 # main.py
 
-
 from flask import Flask, render_template, request
-
 from api_call import ingredient_search
+from meat import veggie
 
 app = Flask(__name__)
+
+found_meat = []
 
 
 # @app.route('/')
@@ -22,15 +23,20 @@ app = Flask(__name__)
 # pprint(recipes)
 
 
-
 @app.route('/send', methods=["GET", "POST"])
 def send():
     if request.method == "POST":
         ingredient = request.form["ingredient"]
+        vegetarian = request.form.get('vegetarian')
 
         recipes = ingredient_search(ingredient)
 
-        return render_template("ingredient.html", ingredient=ingredient, recipes=recipes)
+        veggie_recipes = [recipe for recipe in recipes if veggie(recipe['source_url'].lower()) is True]
+
+        if vegetarian:
+            return render_template("ingredient.html", ingredient=ingredient, recipes=veggie_recipes)
+        else:
+            return render_template("ingredient.html", ingredient=ingredient, recipes=recipes)
 
     return render_template("index.html")
 
