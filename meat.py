@@ -14,12 +14,11 @@ def veggie(string):
         else:
             val.append(False)
 
-    print(all(val))
+    return all(val)
 
 
-str1 = 'chicken stew'
 
-veggie(str1)
+
 
 
 

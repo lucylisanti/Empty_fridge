@@ -31,15 +31,13 @@ def send():
         ingredient = request.form["ingredient"]
 
         recipes = ingredient_search(ingredient)
-        veggie_recipes: Dict[Any, Any] = {}
 
-        for recipe in recipes:
-            if veggie(recipe.source_url):
-                veggie_recipes.append(recipe)
+        veggie_recipes = [recipe for recipe in recipes if veggie(recipe['source_url'].lower()) is True]
 
         return render_template("ingredient.html", ingredient=ingredient, recipes=veggie_recipes)
 
     return render_template("index.html")
+
 
 
 if __name__ == "__main__":
