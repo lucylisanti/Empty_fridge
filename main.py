@@ -31,7 +31,10 @@ def send():
 
         recipes = ingredient_search(ingredient)
 
-        veggie_recipes = [recipe for recipe in recipes if veggie(recipe['source_url'].lower()) is True]
+        veggie_recipes = [recipe for recipe in recipes if veggie(recipe['source_url'].lower())]
+
+        if not recipes:
+            return render_template("empty.html", ingredient=ingredient)
 
         if vegetarian:
             return render_template("ingredient.html", ingredient=ingredient, recipes=veggie_recipes)

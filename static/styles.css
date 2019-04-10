@@ -1,7 +1,10 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f8f9fa;
+  background-image: url("https://www.pexels.com/photo/white-red-and-yellow-citrus-fruits-1415734/");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .ingredient-search-box {
@@ -40,12 +43,54 @@ body {
 height: 30px;
   }
 
-.footer {
-position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-image: url("https://images.pexels.com/photos/269264/pexels-photo-269264.jpeg?cs=srgb&dl=cutlery-dining-room-flatware-269264.jpg&fm=jpg");
-  color: white;
-  text-align: center;
+
+.font {
+font-family: 'Abril Fatface', cursive !important;
+ font-family: 'Amatic SC', cursive !important;
+  color: #4d4f53;
+  font-size: 50px;
+}
+
+.font2 {
+font-family: 'Nunito', sans-serif;
+ font-size: 18px;
+}
+
+.jumbofont{
+font-family: 'Abril Fatface', cursive !important;
+ font-family: 'Amatic SC', cursive !important;
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: bold;
   }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #fb3958;
+    color: white;
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+
+.footer-changes {
+padding-bottom: 40px;
+
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ingredient.css') }}"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>No Results :(</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class='jumbotron'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-8'>
+          <h1>We couldn't find any recipes using {{ingredient}} :( </h1>
+  <a class='button' href="http://127.0.0.1:8080/send"> Search for another </a>
+        </div>
+      </div>
+    </div>
+
+      </center>
+    </div>
+</body>

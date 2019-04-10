@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Empty Fridge</title>
 </head>
-
 <body>
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Empty Fridge</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,45 +23,41 @@
     </div>
   </div>
 </nav>
-
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-        <h1 class="display-4">Empty Fridge</h1>
-        <p class="lead">Nothing to eat? Think again.</p>
+        <h1 class="display-4 jumbofont">Empty Fridge</h1>
+        <p class="lead font2">Nothing to eat? Think again.</p>
   </div>
 </div>
-
 <div class="container">
     <div class="row">
         <div class="col"></div>
         <div class="col-10">
             <div class="ingredient-search">
-                <h1 id="search">What's in your fridge?</h1>
-                <p1>Search for some delicious vegetarian recipes inspired by your empty fridge.</p1>
+                <h1 id="search" class="font">What's in your fridge?</h1>
+                <p1 class="font2">Search for some delicious vegetarian recipes inspired by your empty fridge.</p1>
                 <div class="ingredient-search-box">
                     <form method="POST" action="/send">
                       <div class="form-group">
                         <input type="text" name="ingredient" placeholder="Your ingredients...">
                       </div>
-                       <input name="vegetarian" type="checkbox" value="vegetarian"> Only show me vegetarian recipes
+                       <input class="font2" name="vegetarian" type="checkbox" value="vegetarian"> Only show me vegetarian recipes
                       <input class="btn btn-primary" type="submit" value="submit">
                     </form>
                 </div>
             </div>
-
             <div class="spacer"></div>
-
             <div class="about">
-                <h1 id="about">About</h1>
+                <h1 id="about" class="font">About</h1>
                 <blockquote class="blockquote">
-                    <p class="mb-0">The average UK home wastes over £450 per year on avoidable food waste, amounting to a total of 7.3m tonnes of food waste reaching landfill sites per year.</p>
-                    <footer class="blockquote-footer">Environment, Food and Rural Affairs Committee, 2017</footer>
+                    <p class="mb-0 font2">The average UK home wastes over £450 per year on avoidable food waste, amounting to a total of 7.3m tonnes of food waste reaching landfill sites per year.</p>
+                    <footer class="blockquote-footer font2">Environment, Food and Rural Affairs Committee, 2017</footer>
                 </blockquote>
                 <blockquote class="blockquote">
-                    <p class="mb-0">Around half of all greenhouse gas emissions are as a result of the meat industry.</p>
-                    <footer class="blockquote-footer">World Bank, 2009</footer>
+                    <p class="mb-0 font2">Around half of all greenhouse gas emissions are as a result of the meat industry.</p>
+                    <footer class="blockquote-footer font2">World Bank, 2009</footer>
                 </blockquote>
-                <p1>Our mission is to reduce the amount of food waste sent to landfill and reduce greenhouse gas emissions by making it easier for you to find inspiring recipes using the contents of your fridge.</p1>
+                <p1 class="font2">Our mission is to reduce the amount of food waste sent to landfill and reduce greenhouse gas emissions by making it easier for you to find inspiring recipes using the contents of your fridge.</p1>
                 <br>
             </div>
             <div class="spacer"></div>
@@ -70,13 +66,29 @@
         <div class="col"></div>
     </div>
 </div>
+<div class="footer-changes">
+<div class="container">
 
-<div class="footer">
-    <p>Footer</p>
-</div>
+     <center>  <p class='footer'>Hope you found something yummy, share it with others!</p> </center>
 
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <center>
+
+          <div class="display-inline">
+              <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+          </div>
+
+      </center>
+
+    </div>
+
+
+  </div>
+</body>
 <script src="static/jquery-3.3.1.min.js"></script>
 <script src="static/bootstrap.js"></script>
-
 </body>
 </html>
