@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Empty Fridge</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,17 +17,17 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Ingredient lookup</a>
-      <a class="nav-item nav-link" href="#">About</a>
+      <a class="nav-item nav-link active" href="/send">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="/send#search">Ingredient lookup</a>
+      <a class="nav-item nav-link" href="/send#about">About</a>
     </div>
   </div>
 </nav>
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4">Empty Fridge</h1>
-    <p class="lead">Nothing to eat? Think again.</p>
+        <h1 class="display-4">Empty Fridge</h1>
+        <p class="lead">Nothing to eat? Think again.</p>
   </div>
 </div>
 
@@ -34,21 +35,48 @@
     <div class="row">
         <div class="col"></div>
         <div class="col-10">
-            <h1>Input ingredient</h1>
-            <div class="ingredient-search"></div>
-                <form method="POST" action="/send">
-                  <div class="form-group">
-                    <input type="text" name="ingredient">
-                  </div>
-                  <input class="btn btn-primary" type="submit" value="submit">
-                </form>
+            <div class="ingredient-search">
+                <h1 id="search">What's in your fridge?</h1>
+                <p1>Search for some delicious vegetarian recipes inspired by your empty fridge.</p1>
+                <div class="ingredient-search-box">
+                    <form method="POST" action="/send">
+                      <div class="form-group">
+                        <input type="text" name="ingredient" placeholder="Your ingredients...">
+                      </div>
+                       <input name="vegetarian" type="checkbox" value="vegetarian"> Only show me vegetarian recipes
+                      <input class="btn btn-primary" type="submit" value="submit">
+                    </form>
+                </div>
             </div>
+
+            <div class="spacer"></div>
+
+            <div class="about">
+                <h1 id="about">About</h1>
+                <blockquote class="blockquote">
+                    <p class="mb-0">The average UK home wastes over £450 per year on avoidable food waste, amounting to a total of 7.3m tonnes of food waste reaching landfill sites per year.</p>
+                    <footer class="blockquote-footer">Environment, Food and Rural Affairs Committee, 2017</footer>
+                </blockquote>
+                <blockquote class="blockquote">
+                    <p class="mb-0">Around half of all greenhouse gas emissions are as a result of the meat industry.</p>
+                    <footer class="blockquote-footer">World Bank, 2009</footer>
+                </blockquote>
+                <p1>Our mission is to reduce the amount of food waste sent to landfill and reduce greenhouse gas emissions by making it easier for you to find inspiring recipes using the contents of your fridge.</p1>
+                <br>
+            </div>
+            <div class="spacer"></div>
+        </div>
         </div>
         <div class="col"></div>
     </div>
 </div>
 
+<div class="footer">
+    <p>Footer</p>
+</div>
+
 <script src="static/jquery-3.3.1.min.js"></script>
 <script src="static/bootstrap.js"></script>
+
 </body>
 </html>

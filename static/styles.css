@@ -1,14 +1,51 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
 }
 
-.ingredient-search {
-    text-align: center;
-    position: absolute;
+.ingredient-search-box {
+    text-align: left;
+    position: relative;
+
 }
 
 .h1 {
     text-align: center;
     color: #505359;
+  }
+
+.jumbotron {
+  background-image: url("https://images.pexels.com/photos/269264/pexels-photo-269264.jpeg?cs=srgb&dl=cutlery-dining-room-flatware-269264.jpg&fm=jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 280px;
+}
+
+.ingredient-search {
+    margin: 30px;
+    border: 1px solid #f8f9fa;
+    outline: 5px solid #c97e39;
+    outline-offset: 15px;
+}
+
+.about {
+    margin: 30px;
+    border: 1px solid #f8f9fa;
+    outline: 5px solid #c97e39;
+    outline-offset: 15px;
+}
+
+.spacer {
+height: 30px;
+  }
+
+.footer {
+position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url("https://images.pexels.com/photos/269264/pexels-photo-269264.jpeg?cs=srgb&dl=cutlery-dining-room-flatware-269264.jpg&fm=jpg");
+  color: white;
+  text-align: center;
   }
