@@ -1,21 +1,100 @@
-# ingredient
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ingredient.css') }}"/>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
     <title>Ingredient</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1>Your ingredient is  {{ ingredient }}</h1>
-    <h1>Your recipes are </h1>
-    <ul>
-        {% for recipe in recipes %}
-        <li>{{ recipe.title }}
-            <a href="{{recipe.source_url}}" ><img src="{{recipe.image_url}}"></a></li>
-        {% endfor %}
-    </ul>
+
+
+
+  <div class='jumbotron'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-8'>
+
+          <h1>Do something magical with {{ingredient}} </h1>
+
+  <a class='button' href="#take_me_here"> Take me to recipes </a>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+<!--end test-->
+
+<!--added as a test; need to change names-->
+
+
+    <div class="container">
+
+
+<!--end of test-->
+
+
+<h1 id="take_me_here"> Here are our yummy suggestions </h1> <img src="">
+
+
+
+{% for recipe in recipes %}
+
+<div class="row">
+        <div class='col-sm-6'>
+
+    <h1 class="title"> {{ recipe.title }} </h1>
+<span class="link">
+    <p class='font'> Here's a recipe kindly supplied by </p>
+    <strong> <p class="font"> {{ recipe.publisher }} </p> </strong>
+            <a class="font2" href="{{recipe.source_url}}"> <p> {{ recipe.publisher_url }} </p> </a>
+    </span>
+        </div>
+ <div class='col-sm-6'>
+
+        <a class='1' href="{{recipe.source_url}}" ><img src="{{recipe.image_url}}" class="img-fluid custom_img" id="bootstrap-overrides" alt="Responsive image"></a>
+ </div>
+</div>
+{% endfor %}
+
+    </div>
+
+<!-- test footer -->
+
+    <div class="container">
+
+     <center>  <p class='footer'>Hope you found something yummy, share it with others!</p> </center>
+
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!-- Add font awesome icons -->
+      <center>
+
+          <div class="display-inline">
+              <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+          </div>
+
+      </center>
+
+    </div>
+
+
+  </div>
+  <!-- end test  footer -->
+
+
 </body>
 </html>

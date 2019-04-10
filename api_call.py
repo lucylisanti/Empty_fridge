@@ -2,7 +2,9 @@ import requests
 
 
 def ingredient_search(ingredient_name):
-    key = "3caf4c461472986be1f4344d71103e2b&"
+
+    key = "e1235990de7f65160fd351d7e118209a&"
+
 
     url = 'https://www.food2fork.com/api/search?key={}q={}'.format(key, ingredient_name)
 
@@ -13,3 +15,4 @@ def ingredient_search(ingredient_name):
     return recipe["recipes"]
 
 
+ 
