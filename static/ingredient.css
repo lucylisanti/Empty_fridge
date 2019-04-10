@@ -1,0 +1,148 @@
+h1 {
+color: black;
+font-family: 'Abril Fatface', cursive;
+font-family: 'Amatic SC', cursive;
+font-size: 25px;
+}
+
+#bootstrap-overrides {
+    max-width: 50%;
+    height: auto;}
+
+.custom_img {
+    padding-top: 20px;
+    padding-bottom: 20px;}
+
+h1.title {
+text-align: right;
+font-size: 32px;
+font-weight: bold;
+padding-top: 15px;
+padding-bottom: 20px;}
+
+span.link {
+text-align: right;
+font-size: 18px;
+padding-top: 15px;
+}
+
+.display-inline {
+display: inline-block;
+}
+/* test */
+
+.jumbotron {
+  padding-top: 90px;
+  height: 900px;
+  margin-bottom: 0;
+  background-image: url('../Images/coffee2.png');
+  background-size: cover;
+  }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #fb3958;
+    color: white;
+}
+
+.jumbotron {
+  padding-top: 90px;
+  height: 768px;
+  margin-bottom: 0;
+  background-image: url('/static/Img_Fridge_site2.png');
+  background-size: cover;
+
+/*  this is what makes the image parallax */
+  /* background-attachment: fixed; */
+
+}
+
+.jumbotron h1 {
+ font-family: 'Abril Fatface', cursive;
+ font-family: 'Amatic SC', cursive;
+  color: #4d4f53;
+  /* margin-bottom: 1em; */
+  margin-right: 200px;
+  font-size: 80px;
+  line-height: 100px;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
+
+}
+.btn {
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 10px 10px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+a.button {
+color: white;
+padding: 1em;
+background: green;
+text-decoration: none;
+border: none;
+border-radius: 10px;
+font-size: 18px;
+}
+  /* end test */
+
+  .font {
+  font-family: 'Nunito', sans-serif;
+  }
+
+.font2 {
+ font-family: 'Nunito', sans-serif;
+ font-size: 14px;
+ /* color: green; */
+ }
+
+ a:link {
+
+ color: green;
+ }
+
+ a:visited {
+ color: purple;
+ }
+
+ a:hover {
+ color: pink;
+
+ }
+
+#take_me_here {
+font-size: 40px;
+padding-top: 30px;
+color: white !important;}
