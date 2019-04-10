@@ -12,7 +12,7 @@ app = Flask(__name__)
 # def recipes_site():
 #     return render_template('index.html')
 #
-# app.run(debug=True)
+# app.run(debug=True)a
 
 
 # ingredient_name = input('What ingredient? ')
@@ -36,4 +36,4 @@ def send():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port=8080)
